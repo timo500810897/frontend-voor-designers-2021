@@ -23,10 +23,17 @@ h4 {
 	max-height: 50px;
 }
 
-.list-group-item img {
+.list-group-item img:nth-of-type(2) {
 	margin-right: 10px;
 	height: 27px;
 	width: 27px;
+}
+
+.list-group-item img:nth-of-type(1) {
+	margin-right: 10px;
+	height: 17px;
+	width: 17px;
+	align-self: center;
 }
 
 .list-group-item p {
