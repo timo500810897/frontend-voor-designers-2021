@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.icon {
+  width: 30%;
+  max-height: 300px;
+  max-width: 200px;
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+  color: rgb(245, 202, 11);
+}
+
+main img {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: rgb(245, 202, 11);
+  padding: 0.5rem;
+  border: solid 0.5px black;
+  margin-bottom: 5%;
+}
+
+button:hover {
+  background-color: rgb(255, 123, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+  font-size: 700;
+  border: 0.5px solid black;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+ul {
+  background: rgb(245, 202, 11);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: black;
+  background: rgb(245, 202, 11);
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: black;
+}
+
+li:hover,
+li:focus-within {
+  background: rgb(255, 123, 0);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}

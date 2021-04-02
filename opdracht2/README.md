@@ -12,9 +12,17 @@ En voeg een link naar je demo toe.
 ## interface
 Leg de interface uit.
 
-In de demo heb je interface design principles 04, 08 & 09 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
+Door gebruik te hebben gemaakt van het simpele en duidelijke carouselprincipe is het simpel de users
+in control te houden. Het is gemakkelijk te begrijpen en geeft je daardoor ook een natural next step.
+Er kan door de carousel gebladerd worden door middel van de pijltjes en de bolletjes. Dit helpt ook
+om appearance follows behavior te realiseren. Hierbij worden de bolletjes gekleurd om aan te geven
+waar je je bevindt in de carousel. Dit wordt dubbel ook aangegeven door de 1/6 etc. boven aan de 
+carousel.
 
-In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
+Het gebruik maken van pijltjestoetsen is mij achteraf niet gelukt na veel pogingen.
 
 ## code
-Leg de code uit.
+De carousel is opgebouwd uit containers die elkaar vervangen door het gebruik van display: block te
+vervangen voor display block en andersom om ze weer te verbergen. Zo vervangen ze elkaar en met een 
+lichte animatie, die bestaat uit een verandering in opacity, lijkt het als of de foto daadwerkelijk
+wordt vervangen.
