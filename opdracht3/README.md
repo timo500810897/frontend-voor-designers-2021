@@ -6,8 +6,10 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
-Beschrijf hier je eigen project.
-En voeg een link naar je demo toe.
+Ik heb the cat api gebruikt. Deze api is eigenlijk een JSON-file waarbij er ontzettend veel informatie
+te vinden is over veel verschillende kattensoorten. Hierbij heb ik een generator gemaakt waar je random
+katten kunt genereren en ook foto's kunt bekijken per soort kat.
+https://timo500810897.github.io/frontend-voor-designers-2021/opdracht3/opdracht3/cats.html
 
 ## interface
 Leg de interface uit.

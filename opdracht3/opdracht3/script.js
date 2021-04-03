@@ -52,7 +52,9 @@ main.appendChild(img)
 
 var myButton = document.querySelector("button");
 var icon = document.getElementById("icon");
+var myP = document.querySelector("p");
  myButton.addEventListener("click", function () {
    getData();
    icon.style.display = 'none';
+   myP.style.display = 'none';
  })
