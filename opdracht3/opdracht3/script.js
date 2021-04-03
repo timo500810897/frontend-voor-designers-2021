@@ -1,58 +1,58 @@
 
 var main = document.querySelector("main")
+var jsonBreed = 'https://api.thecatapi.com/v1/images/search?breed_id=';
 
-function getData(){
-var json = 'https://api.thecatapi.com/v1/images/search?breed_id=';
-    var request = new XMLHttpRequest();
-    request.open('get', json);
-    request.responseType = 'json';
-    request.send();
+function getData() {
+  var json = 'https://api.thecatapi.com/v1/images/search?breed_id=';
+  
+  var abys = document.getElementById('abys')
+  abys.addEventListener("click", function () {
+    jsonBreed = json + 'abys'
+    console.log(jsonBreed)
+  })
 
-    request.addEventListener("load", function () {
-      img.src = request.response[0].url;
-      main.appendChild(img)
+  var aege = document.getElementById('aege')
+  aege.addEventListener("click", function () {
+    jsonBreed = json + 'aege'
+    console.log(jsonBreed)
+  })
 
-    var abys = document.getElementById('abys')  
-      abys.onclick = function () {
-        json = json + 'abys'
-        console.log(json)
-      }
-      
-    var aege = document.getElementById('aege')  
-      aege.onclick = function () {
-        json = json + 'aege'
-        console.log(json)
-      }
-      
-    var abob = document.getElementById('abob')  
-      abob.onclick = function () {
-        json = json + 'abob'
-        console.log(json)
-      }
-      
-    var acur = document.getElementById('acur')  
-      acur.onclick = function () {
-        json = json + 'acur'
-        console.log(json)
-      }
-      
-    var asho = document.getElementById('asho')  
-      asho.onclick = function () {
-        json = json + 'asho'
-        console.log(json)
-    }
+  var abob = document.getElementById('abob')
+  abob.addEventListener("click", function () {
+    jsonBreed = json + 'abob'
+    console.log(jsonBreed)
+  })
 
-    })
+  var acur = document.getElementById('acur')
+  acur.addEventListener("click", function () {
+    jsonBreed = json + 'acur'
+    console.log(jsonBreed)
+  })
+
+  var asho = document.getElementById('asho')
+  asho.addEventListener("click", function () {
+    jsonBreed = json + 'asho'
+    console.log(jsonBreed)
+  })
+
+  var request = new XMLHttpRequest();
+  request.open('get', jsonBreed);
+  request.responseType = 'json';
+  request.send();
+
+  request.addEventListener("load", function () {
+    img.src = request.response[0].url;
+    main.appendChild(img)
+
+  })
 }
-
-
 
 var img = document.createElement("img")
 main.appendChild(img)
 
 var myButton = document.querySelector("button");
-myButton.addEventListener("click", function () {
-  getData();
-})
-
-    
+var icon = document.getElementById("icon");
+ myButton.addEventListener("click", function () {
+   getData();
+   icon.style.display = 'none';
+ })
